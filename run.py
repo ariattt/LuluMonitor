@@ -97,7 +97,8 @@ def spinning_cursor():
             yield cursor
 
 def spin( how_long ):
-    # how_long in 0.1 seconds
+    # how_long in 1 seconds
+    how_long *= 10
     spinner = spinning_cursor()
     for _ in range( how_long ):
         tar = next(spinner)
@@ -111,7 +112,7 @@ starttime = time.time()
 while True:
     check()
     minute = 5
-    spin(10 * (minute * 60 + random.randrange(60))) # unit is second
+    spin(minute * 60 + random.randrange(60)) # unit is second
 
 
 
