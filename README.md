@@ -5,3 +5,7 @@ Automatically check if a Lululemon coat is in stock. You can ping your Slack or 
 
 and then your slack will receive a message. I didn't try Discord but I believe it should be as simple, or otherwise shame on Discord :)
 
+# To Run
+Simply,
+
+`python run.py`
