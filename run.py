@@ -28,8 +28,10 @@ def check():
             current_time = now.strftime("%-I:%M %p")
             print(current_time + ': Out of Stock')
         else:
-            msg = BeautifulSoup(str(cur_size.find_parent())).prettify()
-            print(msg)
+            msg = BeautifulSoup(str(cur_size.find_parent()), features="lxml").prettify()
+            # print(msg)
+            url = sys.argv[1]
+            requests.get( url )
 
 def spinning_cursor():
     frames = [
