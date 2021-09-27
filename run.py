@@ -29,7 +29,7 @@ def check():
             print(current_time + ': Out of Stock')
         else:
             msg = BeautifulSoup(str(cur_size.find_parent()), features="lxml").prettify()
-            # print(msg)
+            print(msg)
             url = sys.argv[1]
             requests.get( url )
 
