@@ -9,3 +9,6 @@ and then your slack will receive a message. I didn't try Discord but I believe i
 Simply,
 
 `python run.py <your_private_message_handle_that_will_be_pinged>`
+
+## Demo
+![](https://github.com/maohuaw/LuluMonitor/blob/main/demo.gif)
